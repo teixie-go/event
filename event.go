@@ -4,7 +4,7 @@ var (
 	_ Event = (*event)(nil)
 )
 
-type ListenerFunc func(interface{})
+type ListenerFunc func(payload interface{})
 
 // 全局监听方法
 var listeners = make([]ListenerFunc, 0)
